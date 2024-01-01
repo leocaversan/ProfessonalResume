@@ -1,0 +1,73 @@
+
+
+
+.container{
+    margin-left:1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1.3rem;
+    box-sizing: border-box;
+}
+.container:hover{
+    border: 1px solid #198754;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-right:.5rem;
+    margin-left:.5rem;
+    box-sizing: border-box;
+    color:#9d9b99;    
+}
+.header > div{
+    text-align: center;
+    font-size:1rem;
+}
+.image_profile{
+    display: flex;
+    justify-content: center;
+}
+.image_profile > img{
+    height:15rem;
+    width:10rem;
+}
+.general_info {
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.general_info > div{
+    font-size:1.2rem;
+    box-sizing: border-box;
+}
+.general_info > div > h1{
+    color:#9d9b99;
+    font-size:.7rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;
+}
+.card_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.card_contact > button{
+    border:none;
+    border-radius:2rem;
+    padding:.5rem 4rem .5rem 4rem;
+    background-color: #20c997;
+}
+.card_contact > button:active{
+    padding:.5rem 4.2rem .5rem 4.2rem;
+}

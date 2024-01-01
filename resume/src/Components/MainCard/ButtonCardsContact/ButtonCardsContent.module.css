@@ -1,0 +1,12 @@
+.conteiner{
+    margin:.4rem;
+}
+.conteiner > img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 99999px;
+    border:1px solid #fff
+}
+.conteiner > img:hover{
+    border: 1px solid #198754;
+}

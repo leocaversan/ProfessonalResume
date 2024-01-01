@@ -1,0 +1,39 @@
+
+.card{
+    /* border-left: 1px solid #fff; */
+    display:flex;
+    flex-direction: row;
+
+}
+.connector{ 
+    /* margin-top:-4px; */
+    margin-left:2px;
+    margin-bottom:1rem;
+    border-left: 1px solid #575755;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1rem; */
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+
+    /* border-bottom:solid .1px #fff; */
+    /* border-radius: .8rem; */
+}
+.time{
+    display: flex;
+    flex-direction: row;
+}
+.company{
+    margin-top: 1rem;
+    
+}
+.icon{
+    height: .3rem;
+    width: .3rem;
+    margin-right: .4rem;
+    margin-top:.5rem;
+    background-color: #fff;
+    border-radius:99999px;
+}

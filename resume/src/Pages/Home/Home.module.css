@@ -1,0 +1,44 @@
+.container{
+    margin: 0;
+    background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+    width:full;
+    height:100VH;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+
+    color: #fff;
+    display:flex;
+    justify-content: center;
+}
+.main_card{
+    margin-top:4rem;
+    margin-right: 1rem;
+    width: 35%;
+    overflow-y: scroll;
+}
+.content{
+    margin-top:4rem;
+    margin-left: 1rem;
+    width: 90%;
+    overflow-y: scroll;
+}
+.specializations{
+    margin-bottom:.4rem;
+}
+.adventages{
+    margin-top:2rem;
+    margin-left:2.5rem;
+    margin-right:2.5rem;
+    margin-bottom:2rem;
+
+    grid-gap: 0.3rem;
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: repeat(4,auto);
+}
+/* .subTopics{
+    border-top: 1px solid #fff;
+} */
