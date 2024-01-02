@@ -42,3 +42,14 @@
 /* .subTopics{
     border-top: 1px solid #fff;
 } */
+
+.animated-box {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInRight 1s ease-out forwards;
+  }
+  
+  .animated-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

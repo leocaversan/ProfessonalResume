@@ -1,9 +1,11 @@
+import { imgLinkProps } from '../../../Props/props';
 import style from './ButtonCardsContent.module.css'
-const ButtonCardsContact = (
-    img:any
-) => {
+
+const ButtonCardsContact = ({img, functionOnClick}:imgLinkProps) => {
     return (
-        <div className={style.conteiner}>
+        <div 
+            className={style.conteiner}
+            onClick={functionOnClick}>
             <img src={img} alt="" />
         </div>
     );

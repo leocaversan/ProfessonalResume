@@ -22,6 +22,10 @@ export interface SpecializationsProps {
     projects:string,
     img:any
 }
-export interface AdvantagesProps {
-    img:string
+export interface imgProps {
+    img:any
+}
+export interface imgLinkProps {
+    img:any,
+    functionOnClick:() => void
 }

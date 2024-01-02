@@ -31,8 +31,18 @@ const MainCard = () => {
                 </div>
             </div>
             <div className={style.buttons}>
-                <ButtonCardsContact />
-                <ButtonCardsContact />
+                <ButtonCardsContact 
+                    img={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'} 
+                    functionOnClick={() => {
+                        window.location.href = 'https://github.com/leocaversan'
+                    }} 
+                    />
+                <ButtonCardsContact 
+                    img={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg'} 
+                    functionOnClick={() => {
+                        window.location.href = 'https://www.linkedin.com/in/leonardo-caversan-moi/'
+                    }}  
+                    />
             </div>
             <div className={style.card_contact}>
                 <button>

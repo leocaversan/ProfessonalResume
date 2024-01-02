@@ -2,6 +2,7 @@
     margin:.4rem;
 }
 .conteiner > img{
+    background-color: #fff;
     height: 2rem;
     width: 2rem;
     border-radius: 99999px;

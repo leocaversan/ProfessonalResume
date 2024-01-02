@@ -37,3 +37,50 @@
     background-color: #fff;
     border-radius:99999px;
 }
+.visible{
+    position:relative;
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInRight 4s ease-out forwards;
+  
+}
+    @keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(1rem);
+    }
+    }
+    @keyframes scrollText {
+    0% {
+        transform: translateX(150%);
+        opacity:0;
+    }
+    20% {
+        transform: translateX(150%);
+        opacity:0.1;
+    }
+    30% {
+        transform: translateX(150%);
+        opacity:.2;
+    }
+    70% {
+        transform: translateX(150%);
+        opacity:.5;
+    }
+    80% {
+        transform: translateX(150%);
+        opacity:.7;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity:1;
+    }
+    .complement{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

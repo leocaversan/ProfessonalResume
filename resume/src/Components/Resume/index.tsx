@@ -2,6 +2,7 @@ import Experience from './Experience';
 import style from './Resume.module.css';
 
 const Resume = () => {
+
     return (
         <div className={style.container}>
             <h1>
