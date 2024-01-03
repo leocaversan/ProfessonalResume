@@ -2,29 +2,15 @@ import { useEffect, useRef, useState } from 'react';
 import style from './Home.module.css';
 
 import MainCard from "../../Components/MainCard";
-import Introduce from "../../Components/Introduce";
 import Complement from "../../Components/Complement";
-import Resume from "../../Components/Resume";
 import Specializations from "../../Components/Specializations";
 import Advantages from "../../Components/Advantages";
 
 import { specializatiosData } from '../../data/data';
+import Experience from '../../Components/Experience';
+import About from '../../Components/About';
 
 const Home = () => {
-
-    const observerTime = useRef<any>(null);
-    const [elementIsVisible, setElementIsVisible] = useState<boolean>();
-    const [direction, setDirection] = useState<boolean>(false);
-
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const entry = entries[0];
-            setElementIsVisible(entry.isIntersecting)
-        })
-        observer.observe(observerTime.current);
-    }, []);
-
 
     return (
         <div className={style.container}>
@@ -33,8 +19,24 @@ const Home = () => {
                 <MainCard />
             </div>
             <div className={style.content}>
-                <div ref={observerTime}>
-                    <Introduce />
+                <div className={style.header}>
+                    <Complement
+                        header={"I am Leo, Software Developer and Data Analytics."}
+                        description={"I realy love create new things."}
+                        isHeader={true}
+                    />
+                </div>
+                <div className={style.about}>
+                    <About
+                        year={'3'}
+                        unitOfMeasurement={'Years'}
+                        description={'Development software util now'}
+                    />
+                    <About
+                        year={'10'}
+                        unitOfMeasurement={'Projects'}
+                        description={'development util now'}
+                    />
                 </div>
                 <div className={style.content}>
                     <Complement
@@ -44,12 +46,29 @@ const Home = () => {
                     />
                 </div>
                 <div className={style.content}>
-                    <Resume />
+                    <div className={style.resume}>
+                        <div className={style.resume_header}>
+                            <h1>
+                                Education<span className={style.color_text}>&</span> Experience
+                            </h1>
+                        </div>
+                        <ul>
+                            <Experience
+                                year={'2024'}
+                                title={'Junior Data Analytics.'}
+                                company={'Deloitte'} />
+                            <Experience
+                                year={'2021'}
+                                title={'Trainee Service Help Desk.'}
+                                company={'CPFL.'} />
+                        </ul>
+                    </div>
                 </div>
                 <div className={style.content}>
                     <h1>
-                        My Specializations
+                        My <span className={style.color_text}>Specializations</span>
                     </h1>
+
                     {specializatiosData.map((specializations, index) => (
 
                         <div className={style.specializations}>
@@ -61,6 +80,7 @@ const Home = () => {
                             />
                         </div>
                     ))}
+
                     {/*
                         <div className={style.specializations}>
                             <Specializations
@@ -86,7 +106,7 @@ const Home = () => {
                 </div>
                 <div className={style.content}>
                     <h1>
-                        My Advantages
+                        My <span className={style.color_text}>Advantages</span>
                     </h1>
                     <div className={style.adventages}>
                         <Advantages
@@ -99,7 +119,7 @@ const Home = () => {
                             img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"}
                         />
                         <Advantages
-                            img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"}
+                            img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"}
                         />
                         <Advantages
                             img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"}
@@ -112,7 +132,7 @@ const Home = () => {
                             img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"}
                         />
                         <Advantages
-                            img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"}
+                            img={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"}
                         />
                     </div>
                 </div>

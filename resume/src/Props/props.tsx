@@ -25,6 +25,11 @@ export interface SpecializationsProps {
 export interface imgProps {
     img:any
 }
+export interface aboutProps {
+    year:string,
+    unitOfMeasurement:string,
+    description:string
+}
 export interface imgLinkProps {
     img:any,
     functionOnClick:() => void

@@ -1,12 +1,10 @@
 
 .card{
-    /* border-left: 1px solid #fff; */
     display:flex;
     flex-direction: row;
 
 }
 .connector{ 
-    /* margin-top:-4px; */
     margin-left:2px;
     margin-bottom:1rem;
     border-left: 1px solid #575755;
@@ -14,12 +12,9 @@
 .content{
     display: flex;
     flex-direction: column;
-    /* margin-top: 1rem; */
+    margin-top:.5rem;
     margin-left: 3rem;
     margin-bottom: 2rem;
-
-    /* border-bottom:solid .1px #fff; */
-    /* border-radius: .8rem; */
 }
 .time{
     display: flex;
@@ -40,18 +35,18 @@
 .visible{
     position:relative;
     opacity: 0;
-    transform: translateX(20px);
-    animation: fadeInRight 4s ease-out forwards;
+    transform: translateX(8rem);
+    animation: fadeInRight 5s ease-out forwards;
   
 }
     @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(3rem);
+        transform: translateX(8rem);
     }
     to {
         opacity: 1;
-        transform: translateX(1rem);
+        transform: translateX(8rem);
     }
     }
     @keyframes scrollText {
@@ -61,11 +56,11 @@
     }
     20% {
         transform: translateX(150%);
-        opacity:0.1;
+        opacity:0.3;
     }
     30% {
         transform: translateX(150%);
-        opacity:.2;
+        opacity:.4;
     }
     70% {
         transform: translateX(150%);

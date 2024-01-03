@@ -19,7 +19,7 @@
     animation: fadeInRight 5s ease-out forwards;
 }
 .container_visible:hover {
-    border: 1px solid #28e98c;
+    border: 1px solid #28e98c;;
     opacity: 1;
 }
 @keyframes fadeInRight {
@@ -73,7 +73,7 @@
     font-size: 1.4rem;
 }
 .description{
-    font-size: 0.6rem;
+    font-size: .8rem;
     color:#8c8c8c;
 }
 .projects{

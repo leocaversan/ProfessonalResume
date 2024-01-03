@@ -1,6 +1,6 @@
 import style from './MainCard.module.css';
 import ButtonCardsContact from './ButtonCardsContact';
-// import ImageProfile  from '../../Assets/image_profile.jpeg';
+import ImageProfile  from '../../Assets/profile_image_3.png';
 const MainCard = () => {
     return (
         <div className={style.container}>
@@ -14,8 +14,8 @@ const MainCard = () => {
                 </div>
             </div>
             <div className={style.image_profile}>
-                <img src='' alt="" />
-                {/* <img src={ImageProfile} alt="" /> */}
+
+                <img src={ImageProfile} alt="" />
             </div>
             <div className={style.general_info}>
                 <div>

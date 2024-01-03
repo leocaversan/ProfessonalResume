@@ -1,0 +1,41 @@
+.conteiner_visible {
+
+    display: flex;
+    flex-direction: column;
+    margin-left:0;
+    margin-top:3rem;
+    
+    pacity: 0;
+    transform: translateX(20px);
+    animation: fadeInRight 5s ease-out forwards; 
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    font-size:1.8rem;
+}
+.color_text{
+    margin-right:.5rem;
+    color:#28e98c;
+    font-size:4rem;
+}
+.text{
+    margin-top:2rem;
+}
+.describle{
+    font-size:.9rem;
+    width:25%;
+    line-break: loose;
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,14 +1,35 @@
-.conteiner{
+.conteiner_visible{
     margin:.5rem;
 }
-.conteiner > img{
+.conteiner_visible > img{
     height: 8rem;
     width: 8rem;
 
-    outline: 1px solid #575755;;
+    outline: 1px solid #575755;
     padding-top:3rem;
     padding-bottom:3rem;
     padding-right:.4rem;
     padding-left:.4rem;
     border-radius:5rem;
+
+
+    pacity: 0;
+    transform: translateX(20px);
+    animation: fadeInRight 5s ease-out forwards;
 }
+.conteiner_visible > img:hover{
+    outline: 1px solid #28e98c;
+}
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .conteiner > img{
+    opacity: 0;
+  }

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExperienceProps } from '../../../Props/props';
+import { ExperienceProps } from '../../Props/props';
 import style from './Experience.module.css';
 
 const Experience = ({year, title, company}:ExperienceProps) => {
