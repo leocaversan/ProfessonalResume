@@ -13,16 +13,15 @@
     display: flex;
     flex-direction: column;
     margin-top:.5rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-bottom: 2rem;
 }
 .time{
     display: flex;
     flex-direction: row;
 }
-.company{
-    margin-top: 1rem;
-    
+.time:hover{
+    color: #28e98c;
 }
 .icon{
     height: .3rem;
@@ -31,6 +30,25 @@
     margin-top:.5rem;
     background-color: #fff;
     border-radius:99999px;
+    border: 1px solid #fff;
+}
+.icon:hover{
+    background-color:#28e98c;
+}
+.icon_init{
+    height: .3rem;
+    width: .3rem;
+    margin-right: .4rem;
+    margin-top:.5rem;
+    background-color: #575755;
+    border-radius:50%;
+    border: 1px solid #fff;
+}
+.icon_init:hover{
+    background-color:#28e98c;
+}
+.company{
+    margin-top: 1rem;
 }
 .visible{
     position:relative;
@@ -38,6 +56,9 @@
     transform: translateX(8rem);
     animation: fadeInRight 5s ease-out forwards;
   
+}
+.time_invisible{
+    opacity:0;
 }
     @keyframes fadeInRight {
     from {

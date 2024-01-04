@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
 import style from './Home.module.css';
 
 import MainCard from "../../Components/MainCard";
@@ -21,31 +20,31 @@ const Home = () => {
             <div className={style.content}>
                 <div className={style.header}>
                     <Complement
-                        header={"I am Leo, Software Developer and Data Analytics."}
+                        header={"I am Leonardo, Software Developer and Data Analytics."}
                         description={"I realy love create new things."}
                         isHeader={true}
                     />
+                    <div className={style.about}>
+                        <About
+                            year={'3'}
+                            unitOfMeasurement={'Years'}
+                            description={'Development software util now'}
+                        />
+                        <About
+                            year={'10'}
+                            unitOfMeasurement={'Projects'}
+                            description={'development util now'}
+                        />
+                    </div>
                 </div>
-                <div className={style.about}>
-                    <About
-                        year={'3'}
-                        unitOfMeasurement={'Years'}
-                        description={'Development software util now'}
-                    />
-                    <About
-                        year={'10'}
-                        unitOfMeasurement={'Projects'}
-                        description={'development util now'}
-                    />
-                </div>
-                <div className={style.content}>
+                <div className={style.content_2}>
                     <Complement
                         header={"Every exceptional codebase commences withan even more even more remarkeble narrative"}
                         description={"Breve description about the topic."}
                         isHeader={false}
                     />
                 </div>
-                <div className={style.content}>
+                <div className={style.content_2}>
                     <div className={style.resume}>
                         <div className={style.resume_header}>
                             <h1>
@@ -54,17 +53,19 @@ const Home = () => {
                         </div>
                         <ul>
                             <Experience
-                                year={'2024'}
+                                year={'Jan - 2024'}
                                 title={'Junior Data Analytics.'}
-                                company={'Deloitte'} />
+                                company={'Deloitte'}
+                                isLast={false} />
                             <Experience
-                                year={'2021'}
+                                year={'Nov - 2021'}
                                 title={'Trainee Service Help Desk.'}
-                                company={'CPFL.'} />
+                                company={'CPFL.'}
+                                isLast={true} />
                         </ul>
                     </div>
                 </div>
-                <div className={style.content}>
+                <div className={style.content_2}>
                     <h1>
                         My <span className={style.color_text}>Specializations</span>
                     </h1>
@@ -104,7 +105,7 @@ const Home = () => {
                             img={undefined} />
                     </div> */}
                 </div>
-                <div className={style.content}>
+                <div className={style.content_2}>
                     <h1>
                         My <span className={style.color_text}>Advantages</span>
                     </h1>

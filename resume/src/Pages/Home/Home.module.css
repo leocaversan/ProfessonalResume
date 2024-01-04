@@ -1,5 +1,7 @@
 ::-webkit-scrollbar {display:none;}
-  
+  *{
+    font-family: Inter,sans-serif;
+  }
   .container{
     margin: 0;
     background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
@@ -24,7 +26,15 @@
     /* overflow-y: scroll; */
 }
 .content{
-    margin-top:4rem;
+    margin-top:0rem;
+    margin-left: 1rem;
+    width: 90%;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    /* overflow-y: scroll; */
+}
+.content_2{
+    margin-top: 7rem;
     margin-left: 1rem;
     width: 90%;
     /* overflow: hidden; */
@@ -45,9 +55,6 @@
     gap: 0.3rem;
     grid-template-columns: repeat(4,auto);
 }
-/* .subTopics{
-    border-top: 1px solid #fff;
-} */
 .about{
     display: flex;
     flex-direction: row;
@@ -56,5 +63,14 @@
     color:#28e98c;
     margin-right:.3rem;
     margin-left:.5rem;
-
+}
+.invisible{
+    opacity:0;
+}
+.header{
+    margin-left:.94rem;
+}
+.header > div > h1{
+    font-size:4.5rem;
+    color:#e3e3e3;
 }

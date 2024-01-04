@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ExperienceProps } from '../../Props/props';
 import style from './Experience.module.css';
 
-const Experience = ({year, title, company}:ExperienceProps) => {
+const Experience = ({ year, title, company, isLast }: ExperienceProps) => {
 
     const observerExperience = useRef<any>(null);
     const [elementIsVisible, setElementIsVisible] = useState<boolean>();
@@ -16,7 +16,7 @@ const Experience = ({year, title, company}:ExperienceProps) => {
     }, []);
 
     return (
-        <span 
+        <span
             ref={observerExperience}
             className={elementIsVisible ? style.visible : style.not_visible}>
             <div className={style.time}>
@@ -36,6 +36,16 @@ const Experience = ({year, title, company}:ExperienceProps) => {
                     </div>
                 </div>
             </div>
+            {
+                isLast ?
+                    <div className={style.time}>
+                        <div className={style.icon_init} />
+                        Fev - 2021
+                    </div>
+                    :
+                    <span></span>
+            }
+
         </span>
     );
 

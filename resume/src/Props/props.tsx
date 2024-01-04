@@ -14,7 +14,8 @@ export interface IntroduceProps {
 export interface ExperienceProps {
     year:string,
     title:string,
-   company:string
+   company:string,
+   isLast:boolean
 }
 export interface SpecializationsProps {
     header:string,
