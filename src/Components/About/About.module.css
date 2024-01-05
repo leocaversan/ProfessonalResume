@@ -28,7 +28,9 @@
     width:25%;
     line-break: loose;
 }
-
+.conteiner_not_visible{
+    opacity:0;
+}
 @keyframes fadeInRight {
     from {
       opacity: 0;

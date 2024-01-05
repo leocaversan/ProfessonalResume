@@ -20,7 +20,7 @@ const About = ({year,unitOfMeasurement, description}:aboutProps) => {
     return(
         <div
             ref={observerDiv}
-            className={elementIsVisible ? style.conteiner_visible: style.conteiner}>
+            className={elementIsVisible ? style.conteiner_visible: style.conteiner_not_visible}>
             <div className={style.header}>
                 <span className={style.color_text}>+{year}</span> <span className={style.text}>{unitOfMeasurement}</span>
             </div>

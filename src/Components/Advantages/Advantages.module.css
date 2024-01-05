@@ -19,7 +19,13 @@
 }
 .conteiner_visible > img:hover{
     outline: 1px solid #28e98c;
-}
+  }
+  .conteiner_not_visible > img{
+    opacity: 0;
+  }
+  .conteiner_not_visible{
+    opacity: 0;
+  }
 @keyframes fadeInRight {
     from {
       opacity: 0;
@@ -29,7 +35,4 @@
       opacity: 1;
       transform: translateX(0);
     }
-  }
-  .conteiner > img{
-    opacity: 0;
   }

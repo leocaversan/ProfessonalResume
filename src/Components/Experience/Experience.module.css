@@ -56,7 +56,7 @@
     animation: fadeInRight 5s ease-out forwards;
   
 }
-.time_invisible{
+.not_visible{
     opacity:0;
 }
     @keyframes fadeInRight {
