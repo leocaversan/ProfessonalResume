@@ -48,7 +48,7 @@ const Home = () => {
                     <div className={style.resume}>
                         <div className={style.resume_header}>
                             <h1>
-                                Education<span className={style.color_text}>&</span> Experience
+                                Experience <span className={style.color_text}>&</span> Education
                             </h1>
                         </div>
                         <ul>
@@ -56,20 +56,20 @@ const Home = () => {
                                 year={'Jan - 2024'}
                                 title={'Junior Data Analytics.'}
                                 company={'Deloitte'}
-                                isLast={false} 
+                                isLast={false}
                                 start={''} />
                             <Experience
                                 year={'Nov - 2021'}
                                 title={'Trainee Service Help Desk.'}
                                 company={'CPFL.'}
-                                isLast={true} 
+                                isLast={true}
                                 start={'2021'} />
                             <div className={style.education}>
                                 <Experience
                                     year={'Present'}
                                     title={'Systems Analysis and Development'}
                                     company={'Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.'}
-                                    isLast={true} 
+                                    isLast={true}
                                     start={'2020'} />
                             </div>
                         </ul>
