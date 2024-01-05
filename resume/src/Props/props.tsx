@@ -1,37 +1,38 @@
 export interface ComplementsProps {
-    header:string,
-    description:string,
-    isHeader:boolean
+    header: string,
+    description: string,
+    isHeader: boolean
 }
 export interface SubtopicsProps {
-    descritive:string,
-    img:any,
+    descritive: string,
+    img: any,
 }
 export interface IntroduceProps {
-    titleHeader:string,
-    descriptionHeader:string,   
+    titleHeader: string,
+    descriptionHeader: string,
 }
 export interface ExperienceProps {
-    year:string,
-    title:string,
-   company:string,
-   isLast:boolean
+    year: string,
+    title: string,
+    company: string,
+    isLast: boolean,
+    start: string
 }
 export interface SpecializationsProps {
-    header:string,
-    description:string,
-    projects:string,
-    img:any
+    header: string,
+    description: string,
+    projects: string,
+    img: any
 }
 export interface imgProps {
-    img:any
+    img: any
 }
 export interface aboutProps {
-    year:string,
-    unitOfMeasurement:string,
-    description:string
+    year: string,
+    unitOfMeasurement: string,
+    description: string
 }
 export interface imgLinkProps {
-    img:any,
-    functionOnClick:() => void
+    img: any,
+    functionOnClick: () => void
 }

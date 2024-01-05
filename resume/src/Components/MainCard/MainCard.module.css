@@ -1,74 +1,234 @@
+@media (max-width: 768px) {
+    
+    .container{
+        margin-left:1rem;
+        margin-right:1rem;
+        padding-top:1.8rem;
+        padding-bottom:2.5rem;
+        color: #fff;
+        border-bottom: 1px solid #8c8c8c;
+        border-radius: .4rem;
+        box-sizing: border-box;
 
+/* 
+        box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62); */
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:2rem;
+        margin-right:.5rem;
+        margin-left:.5rem;
+        box-sizing: border-box;
+        color:#9d9b99;    
+    }
+    .header > div{
+        text-align: center;
+        font-size:1rem;
+    }
+    .image_profile{
+        display: flex;
+        justify-content: center;
+    }
+    .image_profile > img{
+        height:18rem;
+        width:13rem;
+        border-radius: 20px;
+    }
+    .general_info {
+        margin-top: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .general_info > div{
+        font-size:1.2rem;
+        box-sizing: border-box;
+    }
+    .general_info > div > h1{
+        color:#9d9b99;
+        font-size:.7rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:1rem;
+    }
+    .card_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:1rem;
+    }
+    .card_contact > button{
+        border:none;
+        border-radius:2rem;
+        padding:.5rem 4rem .5rem 4rem;
+        background-color: #20c997;
+    }
+    .card_contact > button:active{
+        padding:.5rem 4.2rem .5rem 4.2rem;
+    }
+}
+@media (max-width: 920px) and (min-width: 768px) {
+    
+    .container{
+        margin-left:1rem;
+        margin-right:1rem;
+        padding-top:1.8rem;
+        padding-bottom:2.5rem;
+        color: #fff;
+        border-bottom: 1px solid #8c8c8c;
+        border-radius: .4rem;
+        box-sizing: border-box;
 
-
-.container{
-    margin-left:1rem;
-    padding-top:1.2rem;
-    padding-bottom:2.5rem;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 1.3rem;
-    box-sizing: border-box;
+/* 
+        box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 3px 27px 43px 1px rgba(0,0,0,0.62); */
+    }
+    .container:hover{
+        border: 1px solid #198754;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:2rem;
+        margin-right:.5rem;
+        margin-left:.5rem;
+        box-sizing: border-box;
+        color:#9d9b99;    
+    }
+    .header > div{
+        text-align: center;
+        font-size:1rem;
+    }
+    .image_profile{
+        display: flex;
+        justify-content: center;
+    }
+    .image_profile > img{
+        height:18rem;
+        width:13rem;
+        border-radius: 20px;
+    }
+    .general_info {
+        margin-top: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .general_info > div{
+        font-size:1.2rem;
+        box-sizing: border-box;
+    }
+    .general_info > div > h1{
+        color:#9d9b99;
+        font-size:.7rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:1rem;
+    }
+    .card_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:1rem;
+    }
+    .card_contact > button{
+        border:none;
+        border-radius:2rem;
+        padding:.5rem 4rem .5rem 4rem;
+        background-color: #20c997;
+    }
+    .card_contact > button:active{
+        padding:.5rem 4.2rem .5rem 4.2rem;
+    }
 }
-.container:hover{
-    border: 1px solid #198754;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom:2rem;
-    margin-right:.5rem;
-    margin-left:.5rem;
-    box-sizing: border-box;
-    color:#9d9b99;    
-}
-.header > div{
-    text-align: center;
-    font-size:1rem;
-}
-.image_profile{
-    display: flex;
-    justify-content: center;
-}
-.image_profile > img{
-    height:18rem;
-    width:13rem;
-}
-.general_info {
-    margin-top: 2rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.general_info > div{
-    font-size:1.2rem;
-    box-sizing: border-box;
-}
-.general_info > div > h1{
-    color:#9d9b99;
-    font-size:.7rem;
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin:1rem;
-}
-.card_contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:1rem;
-}
-.card_contact > button{
-    border:none;
-    border-radius:2rem;
-    padding:.5rem 4rem .5rem 4rem;
-    background-color: #20c997;
-}
-.card_contact > button:active{
-    padding:.5rem 4.2rem .5rem 4.2rem;
+@media (min-width: 920px) {
+    
+    .container{
+        margin-left:1rem;
+        padding-top:1.2rem;
+        padding-bottom:2.5rem;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 1.3rem;
+        box-sizing: border-box;
+    }
+    .container:hover{
+        border: 1px solid #198754;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:2rem;
+        margin-right:.5rem;
+        margin-left:.5rem;
+        box-sizing: border-box;
+        color:#9d9b99;    
+    }
+    .header > div{
+        text-align: center;
+        font-size:1rem;
+    }
+    .image_profile{
+        display: flex;
+        justify-content: center;
+    }
+    .image_profile > img{
+        height:18rem;
+        width:13rem;
+        border-radius: 20px;
+    }
+    .general_info {
+        margin-top: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .general_info > div{
+        font-size:1.2rem;
+        box-sizing: border-box;
+    }
+    .general_info > div > h1{
+        color:#9d9b99;
+        font-size:.7rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:1rem;
+    }
+    .card_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:1rem;
+    }
+    .card_contact > button{
+        border:none;
+        border-radius:2rem;
+        padding:.5rem 4rem .5rem 4rem;
+        background-color: #20c997;
+    }
+    .card_contact > button:active{
+        padding:.5rem 4.2rem .5rem 4.2rem;
+    }
 }

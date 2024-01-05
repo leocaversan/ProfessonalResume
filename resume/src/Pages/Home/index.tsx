@@ -40,7 +40,7 @@ const Home = () => {
                 <div className={style.content_2}>
                     <Complement
                         header={"Every exceptional codebase commences withan even more even more remarkeble narrative"}
-                        description={"Breve description about the topic."}
+                        description={"Highly accomplished Data Analytics professional with extensive experience in Extract, Transform, Load (ETL) processes utilizing Python, ACL, and Power BI. Proficient in developing microservices architecture using Python, GoLang, and Node, complemented by a solid background in web development with React and Angular using TypeScript. Proven ability to design and implement scalable data pipelines, ensuring accurate and streamlined data flow. Adept at collaborating with cross-functional teams, translating business requirements into effective technical solutions. Possesses a Bachelor's degree in Computer Science, accompanied by certifications in Data Analytics and Microservices Development. A skilled communicator and collaborative team player, consistently delivering results aligned with organizational goals."}
                         isHeader={false}
                     />
                 </div>
@@ -56,12 +56,22 @@ const Home = () => {
                                 year={'Jan - 2024'}
                                 title={'Junior Data Analytics.'}
                                 company={'Deloitte'}
-                                isLast={false} />
+                                isLast={false} 
+                                start={''} />
                             <Experience
                                 year={'Nov - 2021'}
                                 title={'Trainee Service Help Desk.'}
                                 company={'CPFL.'}
-                                isLast={true} />
+                                isLast={true} 
+                                start={'2021'} />
+                            <div className={style.education}>
+                                <Experience
+                                    year={'Present'}
+                                    title={'Systems Analysis and Development'}
+                                    company={'Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.'}
+                                    isLast={true} 
+                                    start={'2020'} />
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -81,29 +91,6 @@ const Home = () => {
                             />
                         </div>
                     ))}
-
-                    {/*
-                        <div className={style.specializations}>
-                            <Specializations
-                                header={"Web Development"}
-                                description={"Create web pages using framework like Angulas and react, with typescript or javascript"}
-                                projects={"3 Projects"}
-                                img={undefined} />
-                        </div>
-                     <div className={style.specializations}>
-                        <Specializations
-                            header={"Backend developement"}
-                            description={"Create services using framework like flastAPI(Python), flask(Python), django(Python) and express(NodeJs) or http(Go)."}
-                            projects={"5 Projects"}
-                            img={undefined} />
-                    </div>
-                    <div className={style.specializations}>
-                        <Specializations
-                            header={"Data Analytics"}
-                            description={"Create pipeline with Apache beam|PySpark, transform data with PySpark|Pandas, unsupervisioned and supervisioned machine learning in with MLib|Scikit-learn."}
-                            projects={"3 Projects"}
-                            img={undefined} />
-                    </div> */}
                 </div>
                 <div className={style.content_2}>
                     <h1>
@@ -137,9 +124,6 @@ const Home = () => {
                         />
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     )

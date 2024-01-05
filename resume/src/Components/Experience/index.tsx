@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { ExperienceProps } from '../../Props/props';
 import style from './Experience.module.css';
 
-const Experience = ({ year, title, company, isLast }: ExperienceProps) => {
+const Experience = ({ year, title, company, isLast, start }: ExperienceProps) => {
 
     const observerExperience = useRef<any>(null);
     const [elementIsVisible, setElementIsVisible] = useState<boolean>();
-    console.log(elementIsVisible);
+    
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
@@ -40,7 +40,7 @@ const Experience = ({ year, title, company, isLast }: ExperienceProps) => {
                 isLast ?
                     <div className={style.time}>
                         <div className={style.icon_init} />
-                        Fev - 2021
+                        {start}
                     </div>
                     :
                     <span></span>
