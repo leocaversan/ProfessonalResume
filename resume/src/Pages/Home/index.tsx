@@ -82,7 +82,7 @@ const Home = () => {
 
                     {specializatiosData.map((specializations, index) => (
 
-                        <div className={style.specializations}>
+                        <div className={style.specializations} key={index}>
                             <Specializations
                                 header={specializations.header}
                                 description={specializations.description}
