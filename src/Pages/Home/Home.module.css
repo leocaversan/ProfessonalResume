@@ -6,7 +6,8 @@
       
       .container{
         margin: 0;
-        background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+        /* background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg"); */
+        background-image: url("https://i.pinimg.com/736x/f4/fc/27/f4fc27a67a84855b5e9079a8079a6fd6.jpg");
         width:full;
         height:100VH;
         background-size: cover;
@@ -15,7 +16,7 @@
         /* overflow: hidden; */
         overflow-y: auto;
         opacity: 0.8;
-    
+        
         color: #fff;
         display:flex; 
         flex-direction: column;
@@ -24,7 +25,7 @@
         display:flex;
         flex-direction: column;
         justify-content: center;
-
+        
     }
     /* .content_2 > h1{
         font-size:1.8rem;
@@ -44,7 +45,7 @@
         display:flex;
         flex-direction: column;
         justify-content: center;
-    
+        
         grid-gap: 0.3rem;
         display: grid;
         gap: 0.3rem;
@@ -75,11 +76,11 @@
     }
     
 }
-  @media (min-width: 420px) and (max-width: 550px) {
-      
-      .container{
+@media (min-width: 420px) and (max-width: 550px) {
+    
+    .container{
         margin: 0;
-        background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+        background-image: url("https://i.pinimg.com/736x/f4/fc/27/f4fc27a67a84855b5e9079a8079a6fd6.jpg");
         width:full;
         height:100VH;
         background-size: cover;
@@ -145,7 +146,7 @@
       
       .container{
         margin: 0;
-        background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+        background-image: url("https://i.pinimg.com/736x/f4/fc/27/f4fc27a67a84855b5e9079a8079a6fd6.jpg");
         width:full;
         height:100VH;
         background-size: cover;
@@ -209,7 +210,7 @@
       
       .container{
         margin: 0;
-        background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+        background-image: url("https://i.pinimg.com/736x/f4/fc/27/f4fc27a67a84855b5e9079a8079a6fd6.jpg");
         width:full;
         height:100VH;
         background-size: cover;
@@ -272,7 +273,7 @@
     
     .container{
       margin: 0;
-      background-image: url("https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+      background-image: url("https://i.pinimg.com/736x/f4/fc/27/f4fc27a67a84855b5e9079a8079a6fd6.jpg");
       width:full;
       height:100VH;
       background-size: cover;

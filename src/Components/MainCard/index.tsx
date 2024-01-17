@@ -45,9 +45,10 @@ const MainCard = () => {
                     />
             </div>
             <div className={style.card_contact}>
-                <button>
+                <button
+                onClick={ () => {window.location.href = 'https://www.linkedin.com/in/leonardo-caversan-moi/'}}>
                     <img src="" alt="" />
-                    Contact me
+                    Contact me on Linkedin
                 </button>
             </div>
         </div>

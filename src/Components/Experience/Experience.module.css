@@ -52,50 +52,50 @@
 .visible{
     position:relative;
     opacity: 0;
-    transform: translateX(8rem);
+    transform: translateY(8rem);
     animation: fadeInRight 5s ease-out forwards;
   
 }
 .not_visible{
     opacity:0;
 }
+.complement{
+    transform: translateY(0);
+    opacity: 1;
+}
     @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(8rem);
+        transform: translateY(8rem);
     }
     to {
         opacity: 1;
-        transform: translateX(8rem);
+        transform: translateY(8rem);
     }
     }
     @keyframes scrollText {
     0% {
-        transform: translateX(150%);
+        transform: translateY(150%);
         opacity:0;
     }
     20% {
-        transform: translateX(150%);
+        transform: translateY(150%);
         opacity:0.3;
     }
     30% {
-        transform: translateX(150%);
+        transform: translateY(150%);
         opacity:.4;
     }
     70% {
-        transform: translateX(150%);
+        transform: translateY(150%);
         opacity:.5;
     }
     80% {
-        transform: translateX(150%);
+        transform: translateY(150%);
         opacity:.7;
     }
     100% {
-        transform: translateX(0%);
+        transform: translateY(0%);
         opacity:1;
-    }
-    .complement{
-        transform: translateX(0);
-        opacity: 1;
     }
 }

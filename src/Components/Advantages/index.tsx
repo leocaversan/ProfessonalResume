@@ -17,7 +17,7 @@ const Advantages = ({img}:imgProps) => {
     return (
         <div 
             ref={observerRender}
-            className={elementIsVisible ? style.conteiner_visible:style.conteiner}>
+            className={elementIsVisible ? style.conteiner_visible:style.conteiner_not_visible}>
                 <img src={img} alt="" />
         </div>
     );

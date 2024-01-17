@@ -13,7 +13,7 @@
     border-radius:5rem;
 
 
-    pacity: 0;
+    opacity: 0;
     transform: translateX(20px);
     animation: fadeInRight 5s ease-out forwards;
 }
@@ -21,9 +21,11 @@
     outline: 1px solid #28e98c;
   }
   .conteiner_not_visible > img{
+    margin:.5rem;
     opacity: 0;
   }
   .conteiner_not_visible{
+    margin:.5rem;
     opacity: 0;
   }
 @keyframes fadeInRight {
